@@ -3,10 +3,8 @@ import {
   Stack,
   Heading,
   Text,
-  CardBody,
   Image,
   Link,
-  Spacer,
 } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 
