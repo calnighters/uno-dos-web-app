@@ -1,11 +1,11 @@
-import { Box, Text } from "@chakra-ui/react"
+import { Box, Heading, Text } from "@chakra-ui/react"
 
 const Logo = () => {
     return (
         <Box>
-            <Text fontSize="lg" fontWeight="bold">
+            <Heading>
                 Uno Dos
-            </Text>
+            </Heading>
         </Box>
     )
 }
