@@ -6,12 +6,11 @@ const DefaultContainer = ({ children }) => {
     <Container
       maxW="100%"
       w="100%"
-      h="100vh"
-      bgGradient="linear(to-bl, red.500, blue.500)"
+      bg="transparent"
       centerContent
       padding="20px"
     >
-        <NavBar/>
+      <NavBar />
       {children}
     </Container>
   );
