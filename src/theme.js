@@ -1,9 +1,5 @@
 import { extendTheme } from '@chakra-ui/react'
 
-const config = {
-    bgGradient: "linear(to-bl, red.500, blue.500)"
-}
-
 const theme = extendTheme({
     styles: {
       global: (props) => ({
