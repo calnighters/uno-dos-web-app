@@ -9,6 +9,7 @@ const teamMembers = [
     name: "Rhianna Kevan",
     role: "Business Analyst",
     linkedinProfile: "https://uk.linkedin.com/in/rhianna-kevan-a3622820b",
+    profilePhoto: "/rhianna-bitmoji.png"
   },
   {
     name: "Eesa Yaqoob",
