@@ -1,17 +1,10 @@
-import {
-  Card,
-  Stack,
-  Heading,
-  Text,
-  Image,
-  Link,
-} from "@chakra-ui/react";
+import { Card, Stack, Heading, Text, Link, Avatar } from "@chakra-ui/react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 
-const TeamMember = ({ name, role, linkedinProfile, profilePhoto }) => {
+const TeamMember = ({ teamMember }) => {
   return (
     <Card
-      direction="row"
+      direction={{ base: "column", sm: "row" }}
       overflow="hidden"
       variant="outline"
       p="10px"
@@ -19,19 +12,23 @@ const TeamMember = ({ name, role, linkedinProfile, profilePhoto }) => {
       color="white"
       border="none"
       shadow="dark-lg"
+      w={{ base: "100%", sm: "400px"}}
     >
-      <Image
-        objectFit="cover"
+      <Avatar
+        name={teamMember.name}
         maxW={{ base: "100%", sm: "200px" }}
-        src={profilePhoto}
-        borderRadius="lg"
+        maxH={{ base: "100%", sm: "200px" }}
+        h={{ base: "100%", sm: "200px" }}
+        w={{ base: "100%", sm: "200px" }}
+        src={teamMember.profilePhoto}
       />
       <Stack p="10px" w={{ base: "100%", sm: "200px" }}>
-        <Heading size="md">{name}</Heading>
-        <Text py={2}>{role}</Text>
-        <Link href={linkedinProfile} isExternal>
+        <Heading size="md">{teamMember.name}</Heading>
+        <Text py={2}>{teamMember.role}</Text>
+        {teamMember.linkedinProfile ? (
+        <Link href={teamMember.linkedinProfile} isExternal>
           Linkedin <ExternalLinkIcon mx="2px" />
-        </Link>
+        </Link>) : (<></>)}
       </Stack>
     </Card>
   );

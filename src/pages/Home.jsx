@@ -1,6 +1,6 @@
 import { Box, Heading, StackDivider, Text, VStack } from "@chakra-ui/react";
 import DefaultContainer from "../containers/DefaultContainer";
-import TeamMemberDisplay from "../components/TeamMemberDisplay";
+import TeamMemberCarousel from "../components/TeamMemberCarousel";
 
 const Home = () => {
   return (
@@ -48,7 +48,7 @@ const Home = () => {
           <Heading pb={2} pl={3}>
             Team
           </Heading>
-          <TeamMemberDisplay />
+          <TeamMemberCarousel />
         </Box>
       </VStack>
     </DefaultContainer>
