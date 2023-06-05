@@ -6,7 +6,6 @@ import {
   Card,
   CardHeader,
   CardBody,
-  CardFooter,
   Text,
 } from "@chakra-ui/react";
 import DefaultContainer from "../containers/DefaultContainer";
