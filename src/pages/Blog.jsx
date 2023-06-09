@@ -42,7 +42,8 @@ const Blog = () => {
               <Heading size="md">{post.title}</Heading>
             </CardHeader>
             <CardBody>
-              <Text>{post.body}</Text>
+              <Text as="b">{post.date}</Text>
+              <Text paddingTop="5px">{post.body}</Text>
             </CardBody>
           </Card>
         ))}
